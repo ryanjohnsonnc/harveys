@@ -1,0 +1,91 @@
+.hero {
+  position: relative;
+  max-width: $max-width;
+  margin: 0px auto;
+  
+  h1 {
+    display: block;
+    margin-top: 120px;
+    margin-bottom: 80px;
+    font-weight: 900;
+
+    @include breakpoint(medium) {
+      margin-top: 274px;
+      margin-bottom: 124px;
+      font-size: 64px;
+    }
+  }
+
+  .hero_mobile-image {
+    margin-bottom: -72px;
+    text-align: right;
+
+    @include breakpoint(medium) {
+      display: none;
+    }
+  }
+
+  .hero_image {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top: 0px;
+    right: 0px;
+    bottom: -32px;
+    left: 50%;
+    background-image: url('/assets/img/hero_image.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  .hero_content {
+    position: relative;
+    z-index: 2;
+    padding: 24px 32px;
+    background-color: $gold;
+    @include default-border;
+   
+    p {
+      color: white;
+      font-size: rem-calc(18);
+    }
+
+    a {
+      display: block;
+      position: relative;
+      font-size: 20px;
+      color: white;
+
+      &:after {
+        content:'';
+        display: block;
+        position: absolute;
+        bottom: -12px;
+        left: 0px;
+        width: 43px;
+        height: 2px;
+        background-color: white;
+      }
+    }
+
+    @include breakpoint(medium) {
+      .hero_content-text {
+        display: block;
+        float: left;
+        width: 70%;
+        
+        p {
+          margin-bottom: 0px;
+        }
+      }
+
+      .hero_contact {
+        display: block;
+        float: right;
+        width: 20%;
+        text-align: left;
+      }
+    }
+  }
+}

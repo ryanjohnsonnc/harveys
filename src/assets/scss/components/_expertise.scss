@@ -1,0 +1,38 @@
+section.expertise {
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+  @include breakpoint(medium) {
+    padding-top: 160px;
+    padding-bottom: 140px;
+  }
+  
+  .expertise_header {
+    display: block;
+    margin-bottom: 60px;
+    text-align: center;
+
+    p {
+      margin-bottom: 0px;
+      font-size: 20px;
+    }
+  }
+
+  .expertise_item {
+    margin-bottom: 28px;
+    text-align: center;
+    .expertise_icon {
+      display: inline-block;
+
+      vertical-align: middle;
+      margin-right: 4%;
+    }
+
+    .expertise_item-title {
+      display: inline-block;
+      margin-bottom: 0px;
+      vertical-align: middle;
+      font-size: rem-calc(20);
+    }
+  }
+}
