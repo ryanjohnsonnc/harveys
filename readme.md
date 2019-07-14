@@ -2,7 +2,7 @@
 
 [![devDependency Status](https://david-dm.org/zurb/foundation-zurb-template/dev-status.svg)](https://david-dm.org/zurb/foundation-zurb-template#info=devDependencies)
 
-This project is based on The ZURB Template from Foundation[Foundation for Sites](http://foundation.zurb.com/sites). It has a Gulp-powered build system with these features:
+This project is based on The ZURB Template from Foundation [Foundation for Sites](http://foundation.zurb.com/sites). It has a Gulp-powered build system with these features:
 
 - Handlebars HTML templates with Panini
 - Sass compilation and prefixing
@@ -38,18 +38,13 @@ foundation new --framework sites --template zurb
 
 The CLI will prompt you to give your project a name. The template will be downloaded into a folder with this name.
 
-Now `cd` to your project name and to start your project run 
+
+### Setup and Development
+
+To set up the template, first download it with Git:
 
 ```bash
-foundation watch
-```
-
-### Manual Setup
-
-To manually set up the template, first download it with Git:
-
-```bash
-git clone https://github.com/zurb/foundation-zurb-template projectname
+git clone hhttps://github.com/ryanjohnsonnc/fabro-site fabrosite
 ```
 
 Then open the folder in your command line, and install the needed dependencies:
