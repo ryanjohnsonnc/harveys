@@ -25,13 +25,13 @@ To use this template, your computer needs:
 To set up the template, first download it with Git:
 
 ```bash
-git clone hhttps://github.com/ryanjohnsonnc/fabro-site fabrosite
+git clone https://github.com/ryanjohnsonnc/fabro-site fabrosite
 ```
 
 Then open the folder in your command line, and install the needed dependencies:
 
 ```bash
-cd projectname
+cd fabrosite
 yarn
 ```
 
