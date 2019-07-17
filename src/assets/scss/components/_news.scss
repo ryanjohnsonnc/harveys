@@ -1,0 +1,16 @@
+section.news {
+  margin-bottom: 80px;
+
+  @include breakpoint(medium) {
+    margin-bottom: 120px;
+  }
+  
+  .news_header {
+    display: block;
+    text-align: center;
+
+    p {
+      font-size: 20px;
+    }
+  }
+}
