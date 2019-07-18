@@ -1,0 +1,64 @@
+.footer_upper {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: $off-white;
+
+  @include breakpoint(medium) {
+    padding-top: 80px;
+  }
+
+  .footer_logo {
+    margin-bottom: 32px;
+
+    @include breakpoint(medium) {
+      margin-bottom: 0px;
+    }
+  }
+
+  .footer_menu {
+    margin-bottom: 32px;
+
+    .menu-item {
+      display: block;
+      margin-bottom: 16px;
+      color: $charcoal;
+      font-weight: 900;
+      font-size: rem-calc(16);
+      &:last-of-type {
+        margin-bottom: 0px;
+      }
+    }
+
+    @include breakpoint(medium) {
+      margin-bottom: 0px;
+    }
+  }
+
+  .footer_social {
+    h4 {
+      font-size: rem-calc(16);
+      margin-bottom: 20px;
+    }
+    nav.social {
+      .social_item {
+        display: inline-block;
+        margin-right: 12px;
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+}
+
+.footer_copyright {
+  background-color:$charcoal;
+
+  p {
+    margin-bottom: 0px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    color: $off-white;
+    font-weight: 900;
+  }
+}

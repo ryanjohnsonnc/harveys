@@ -66,6 +66,9 @@
 @import 'vendor/owlcarousel';
 @import 'util/mixins';
 @import 'global/typography';
+@import 'global/forms';
+
+
 //Components
 @import 'components/hero';
 @import 'components/expertise';
@@ -73,3 +76,4 @@
 @import 'components/story';
 @import 'components/news';
 @import 'components/contact';
+@import 'components/footer';
