@@ -7,10 +7,52 @@ section.news {
   
   .news_header {
     display: block;
+    margin-bottom: 60px;
     text-align: center;
 
     p {
       font-size: 20px;
+    }
+  }
+
+  .news_icons {
+    display: none;
+
+    @include breakpoint(medium) {
+      display: block;
+
+      .news_icon {
+        margin-bottom: 30px;
+        @include default-shadow;
+        border-radius: 3px;
+        height: 75px;
+      }
+    }
+  }
+
+  .news_card {
+    display: block;
+    margin-bottom: 24px;
+    padding: 24px;
+    background-color: $charcoal;
+    border-radius: 3px;
+
+    p {
+      color: white;
+    }
+
+    @include breakpoint(medium) {
+      display: none;
+      margin-bottom: 0px;
+      padding: 48px 24px;
+
+      &.active {
+        display: block;
+      }
+
+      .news_card-attribution {
+        margin-top: 32px;
+      }
     }
   }
 }
