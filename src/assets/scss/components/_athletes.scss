@@ -3,8 +3,12 @@ section.athletes {
   padding-bottom: 80px;
 
   @include breakpoint(medium) {
-    padding-top: 120px;
+    padding-top: 150px;
     padding-bottom: 120px;
+  }
+
+  & > .grid-container {
+    position: relative;
   }
   
   .athletes_header {
@@ -100,6 +104,75 @@ section.athletes {
           }
         }
       }
+    }
+  }
+
+  .athletes_bg-element-1 {
+    display: block;
+    z-index: 1;
+    position: absolute;
+    top: 30%;
+    left: -110px;
+    height: 220px;
+    width: 300px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url('/assets/img/athletes-bg-1.svg');
+
+    @include breakpoint(medium) {
+
+    }
+
+    @include breakpoint(large) {
+      height: 350px;
+      width: 450px;
+      left: -280px;
+      top: 20%;
+    }
+  }
+
+  .athletes_bg-element-2 {
+    display: block;
+    z-index: 1;
+    position: absolute;
+    bottom: -3%;
+    right: -110px;
+    height: 220px;
+    width: 300px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url('/assets/img/athletes-bg-1.svg');
+
+    @include breakpoint(medium) {
+
+    }
+
+    @include breakpoint(large) {
+      height: 350px;
+      width: 450px;
+      right: -420px;
+      top: 20%;
+    }
+  }
+
+  .athletes_bg-element-3 {
+    display: none;
+    
+    @include breakpoint(medium) {
+      
+    }
+
+    @include breakpoint(large) {
+      display: block;
+      z-index: 1;
+      position: absolute;
+      height: 208px;
+      width: 208px;
+      bottom: -32px;
+      right: 22%;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-image: url('/assets/img/story-bg-2.svg');
     }
   }
 }

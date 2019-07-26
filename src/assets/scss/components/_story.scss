@@ -60,4 +60,52 @@
     background-repeat: no-repeat;
     background-position: center center;
   }
+
+  .story_bg-element-1 {
+    display: block;
+    z-index: 1;
+    position: absolute;
+    bottom: -105px;
+    left: -25px;
+    height: 175px;
+    width: 175px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url('/assets/img/story-bg-1.svg');
+
+    @include breakpoint(medium) {
+      left: 35%;
+      width: 236px;
+      height: 164px;
+    }
+
+    @include breakpoint(large) {
+      left: 45%;
+      bottom: -35px;
+    }
+  }
+
+  .story_bg-element-2 {
+    display: block;
+    z-index: 1;
+    position: absolute;
+    bottom: -72px;
+    right: 12px;
+    height: 100px;
+    width: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url('/assets/img/story-bg-2.svg');
+
+    @include breakpoint(medium) {
+      height: 208px;
+      width: 208px;
+      bottom: -142px;
+    }
+
+    @include breakpoint(large) {
+      right: 0px;
+
+    }
+  }
 }

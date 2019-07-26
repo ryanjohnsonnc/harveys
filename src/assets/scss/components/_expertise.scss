@@ -1,10 +1,18 @@
 section.expertise {
-  padding-top: 80px;
-  padding-bottom: 80px;
+  position: relative;
+  overflow: hidden;
 
-  @include breakpoint(medium) {
-    padding-top: 160px;
-    padding-bottom: 140px;
+
+
+  & > .grid-container {
+    position: relative;
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    @include breakpoint(medium) {
+      padding-top: 160px;
+      padding-bottom: 140px;
+    }
   }
   
   .expertise_header {
@@ -33,6 +41,53 @@ section.expertise {
       margin-bottom: 0px;
       vertical-align: middle;
       font-size: rem-calc(20);
+    }
+  }
+
+  .expertise_bg-element-1 {
+    display: block;
+    z-index: 1;
+    position: absolute;
+    bottom: -75px;
+    left: -25px;
+    height: 175px;
+    width: 175px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url('/assets/img/expertise-bg-1.svg');
+
+    @include breakpoint(medium) {
+      height: 220px;
+      width: 220px;
+    }
+
+    @include breakpoint(large) {
+      height: 275px;
+      width: 275px;
+      left: -150px;
+    }
+  }
+
+  .expertise_bg-element-2 {
+    display: none;
+    
+    @include breakpoint(medium) {
+      display: block;
+      z-index: 1;
+      position: absolute;
+      bottom: -120px;
+      right: -100px;
+      height: 220px;
+      width: 220px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-image: url('/assets/img/expertise-bg-2.svg');
+    }
+
+    @include breakpoint(large) {
+      height: 300px;
+      width: 300px;
+      right: -175px;
     }
   }
 }
