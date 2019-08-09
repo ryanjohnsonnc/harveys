@@ -1,0 +1,22 @@
+.owl-carousel .owl-nav button.owl-prev {
+    height: 60px;
+    width: 60px;
+    background-image: url('/assets/img/arrowbtn.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.owl-carousel .owl-nav button.owl-next {
+    height: 60px;
+    width: 60px;
+    margin-top: 32px;
+    margin-left: 16px;
+    background-image: url('/assets/img/arrowbtn.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    @include rotate(180)
+}
+
+.owl-carousel .owl-nav {
+    text-align: right;
+}
