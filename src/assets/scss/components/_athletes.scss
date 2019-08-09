@@ -1,6 +1,7 @@
 section.athletes {
   padding-top: 80px;
   padding-bottom: 80px;
+  overflow: hidden;
 
   @include breakpoint(medium) {
     padding-top: 150px;
@@ -86,6 +87,7 @@ section.athletes {
           }
 
           .carousel_item-open-modal {
+            display: none;
             position: absolute;
             bottom: 32px;
             left: 24px;

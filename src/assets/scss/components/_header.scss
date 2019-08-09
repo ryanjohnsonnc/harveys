@@ -1,0 +1,67 @@
+header.global {
+  position: absolute;
+  z-index: 999;
+  top: 0px;
+  width: 100%;
+  background-color: transparent;
+
+  .header_logo {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 250px;
+    width: 350px;
+    background-image: url('/assets/img/logo-nav.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top left; 
+  }
+
+  .top-bar {
+    background-color: transparent;
+
+    .top-bar-left {
+      .logo-dark {
+        display: none;
+        max-height: 50px;
+      }
+    }
+
+    .top-bar-right {
+      .menu {
+        background-color: transparent;
+
+        a {
+          color: white;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+
+  &.scrolled {
+    position: fixed;
+    background-color: white;
+    @include default-shadow;
+
+    .header_logo {
+      display: none;
+    }
+
+    .top-bar {
+      .top-bar-left {
+        .logo-dark {
+          display: block;
+        }
+      }
+
+      .top-bar-right {
+        .menu {
+          a {
+            color: $body-font-color;
+          }
+        }
+      }
+    }
+  }
+}

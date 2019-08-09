@@ -21,11 +21,33 @@ $(document).foundation();
 /* Global Variables */
 var $window      = $(window),
     wh           = $window.innerHeight,
-    globalHeader = $('header#main'),
+    globalHeader = $('header.global'),
     body         = $('body');
 
 
 $window.on('load', function(){
+  // Handles Sticky Nav
+  $window.scroll(function(){
+    if( $window.scrollTop() >= 300 ) {
+      globalHeader.addClass('scrolled');
+    } else {
+      globalHeader.removeClass('scrolled');
+    }
+  });
+
+  // Handling smooth scroll to anchor links in nav
+  
+  $('.nav_link').on('click', function(e) {
+    e.preventDefault;
+    var section = $(this).attr('href');
+    if(section) {
+      $('html, body').animate({
+        scrollTop: $(section).offset().top + -100
+      }, 800, function(){});
+    }
+  });
+
+
   $(".athletes_carousel").owlCarousel({
     loop:true,
     margin:16,
