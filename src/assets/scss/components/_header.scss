@@ -21,9 +21,12 @@ header.global {
     background-color: transparent;
 
     .top-bar-left {
+      text-align: left;
+      max-width: 100px;
       .logo-dark {
         display: none;
         max-height: 50px;
+        text-align: left;
       }
     }
 
