@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="384.491" height="108.322" viewBox="0 0 384.491 108.322">
+  <g id="Group_70" data-name="Group 70" transform="translate(0.5 0.501)">
+    <path id="Subtraction_2" data-name="Subtraction 2" d="M293.577,153.822h0a27.052,27.052,0,0,1-9.932-1.9,101.348,101.348,0,0,1-10.724-5.136c-10.68-5.583-26.819-14.02-59.371-22.617-8.063-2.129-15.713-4.026-23.112-5.861l-.027-.007-.031-.008c-13.087-3.245-25.447-6.309-36.2-9.755-1.253-.4-2.491-.811-3.682-1.217V45.5H534.991c-9.425,3.172-19.079,6.29-28.415,9.305l-.008,0c-15.382,4.968-29.908,9.659-42.228,14.177-5.911,2.167-11.788,4.657-17.969,7.612-5.515,2.637-11.156,5.591-17.245,9.031-11.331,6.4-22.133,13.3-33.569,20.611-21.708,13.869-44.154,28.211-70.155,38.643a198.727,198.727,0,0,1-19.16,6.838,46.658,46.658,0,0,1-12.663,2.1h0Z" transform="translate(-151 -46)" fill="#d45640"/>
+    <g id="Layer_2" data-name="Layer 2" transform="translate(139.5 13.939)">
+      <g id="Ebene_1" data-name="Ebene 1">
+        <rect id="Rectangle_180" data-name="Rectangle 180" width="30.24" height="62.77" fill="#f7f7f7"/>
+        <rect id="Rectangle_181" data-name="Rectangle 181" width="27.67" height="60.2" transform="translate(1.286 1.286)" fill="#d45640"/>
+        <rect id="Rectangle_182" data-name="Rectangle 182" width="25.617" height="58.509" transform="translate(2.313 2.13)" fill="#f7f7f7"/>
+        <path id="Path_36" data-name="Path 36" d="M50.508,42.514V36.2H37V57.225h3.425V54.716l6.658-5.053v7.555l3.425-2.731V47.061l6.054-4.6V37.914Zm-3.425,2.6-6.658,5.057V39.625h6.658Z" transform="translate(-28.635 -28.016)" fill="#cd4a36"/>
+        <path id="Path_37" data-name="Path 37" d="M43.686,125.232h0l-3.208-2.677H37.01v20.993h3.423V127.043l3.253,2.715,3.4-2.715v16.5h3.425V124.31l6.054-4.831V114.95Z" transform="translate(-28.643 -88.962)" fill="#cd4a36"/>
+        <text id="_ACHIEVEMINDS" data-name="#ACHIEVEMINDS" transform="translate(6.24 58.56)" fill="#cd4a36" font-size="2" font-family="GillSans, Gill Sans" letter-spacing="0.1em"><tspan x="0" y="0">#</tspan><tspan y="0" letter-spacing="0.06em">A</tspan><tspan y="0">CHIEVEMINDS</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>
