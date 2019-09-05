@@ -6,8 +6,9 @@
   h1 {
     display: block;
     margin-top: 120px;
+    margin-left: 80px;
     margin-bottom: 80px;
-    font-weight: 900;
+    font-weight: 700;
 
     @include breakpoint(medium) {
       margin-top: 274px;
@@ -33,7 +34,7 @@
     right: 0px;
     bottom: -32px;
     left: 50%;
-    background-image: url('/assets/img/fabro.jpg');
+    background-image: url('/assets/img/heroImage.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -87,7 +88,7 @@
         text-align: left;
 
         a {
-          margin-top: 32px;
+          margin-top: 20px;
         }
       }
     }
