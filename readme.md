@@ -1,4 +1,4 @@
-# Fabro Site Application
+# Harveys Prototype Application
 
 [![devDependency Status](https://david-dm.org/zurb/foundation-zurb-template/dev-status.svg)](https://david-dm.org/zurb/foundation-zurb-template#info=devDependencies)
 
@@ -25,13 +25,13 @@ To use this template, your computer needs:
 To set up the template, first download it with Git:
 
 ```bash
-git clone https://github.com/ryanjohnsonnc/fabro-site fabrosite
+git clone https://github.com/ryanjohnsonnc/harveys harveys
 ```
 
 Then open the folder in your command line, and install the needed dependencies:
 
 ```bash
-cd fabrosite
+cd harveys
 yarn
 ```
 
