@@ -1,0 +1,24 @@
+.accordion {
+  background-color: transparent;
+}
+
+.accordion-item {
+  margin-bottom: 8px;
+  background-color: white;
+  @include default-border;
+  border: 1px solid $light-gray;
+
+  &:last-of-type {
+    margin-bottom: 0px;
+  }
+
+  .accordion-title {
+    font-weight: 700;
+    padding-left: 2rem;
+
+    &:before {
+      left: 1rem;
+      right: auto;
+    }
+  }
+}
