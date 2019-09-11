@@ -1,0 +1,17 @@
+.about {
+  padding-top: 150px;
+  padding-bottom: 150px;
+  background-size: cover;
+  background-image: url('/assets/img/field_image.jpg');
+  background-repeat: no-repeat;
+  text-align: center;
+
+  h2 {
+    color: white;
+    font-size: rem-calc(44);
+  }
+
+  .about_sun-icon {
+    margin-bottom: 32px;
+  }
+}

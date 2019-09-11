@@ -1,0 +1,17 @@
+.faqs {
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 180px;
+  background-image: url('/assets/img/topography.png');
+  background-size: contain;
+  background-repeat: repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-color: $light-gray;
+
+
+  .faqs_header {
+    margin-bottom: 60px;
+    text-align: center;
+  }
+}

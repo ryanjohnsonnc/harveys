@@ -1,0 +1,32 @@
+section.contact {
+  background-color: rgba($green, .2);
+
+  .contact_form-container {
+    @include border-box;
+    position: relative;
+    top: -80px;
+    padding: 32px;
+    background-color: $green;
+    text-align: center;
+
+    @include breakpoint(medium) {
+      padding: 48px;
+    }
+
+    @include breakpoint(large) {
+      padding: 72px;
+    }
+
+    h2 {
+      color: white;
+    }
+
+    p {
+      color: white;
+    }
+
+    .contact_form {
+      margin-top: 48px;
+    }
+  }
+}

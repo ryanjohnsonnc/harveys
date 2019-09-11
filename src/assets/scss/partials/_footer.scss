@@ -1,17 +1,29 @@
 .footer_upper {
   padding-top: 60px;
   padding-bottom: 60px;
-  background-color: $off-white;
+  background-color: #f7f7f7;
 
   @include breakpoint(medium) {
     padding-top: 80px;
   }
 
+  .footer_grid {
+    margin-bottom: 54px;
+    padding: 32px 24px;
+    background-color: $off-white;
+
+    @include breakpoint(medium) {
+      @include flex-align(center, middle);
+      padding: 50px 60px;
+    }
+  }
+
   .footer_logo {
     margin-bottom: 32px;
-
+    width: 132px;
+    text-align: right;
     img {
-      height: 90px;
+      width: 182px;
     }
 
     @include breakpoint(medium) {
@@ -25,9 +37,8 @@
     .menu-item {
       display: block;
       margin-bottom: 16px;
-      color: $charcoal;
-      font-weight: 900;
-      font-size: rem-calc(16);
+      color: $body-font-color;
+      font-size: rem-calc(14);
       &:last-of-type {
         margin-bottom: 0px;
       }
@@ -35,6 +46,22 @@
 
     @include breakpoint(medium) {
       margin-bottom: 0px;
+
+      .menu-item {
+        margin-bottom: 0px;
+        margin-right: 60px;
+        display: inline-block;
+      }
+    }
+  }
+
+  .footer_disclaimer {
+    h3 {
+      font-size: rem-calc(22);
+    }
+
+    p {
+      font-size: rem-calc(14);
     }
   }
 
@@ -68,14 +95,13 @@
 }
 
 .footer_copyright {
-  background-color:$charcoal;
+  background-color: #f7f7f7;
+  text-align: right;
 
   p {
     margin-bottom: 0px;
     padding-top: 16px;
     padding-bottom: 16px;
-    color: $off-white;
-    font-weight: 900;
     font-size: 16px;
   }
 }

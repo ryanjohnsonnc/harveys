@@ -1,0 +1,120 @@
+.products {
+  padding-top: 100px;
+  
+  .products_header {
+    margin-bottom: 48px;
+    text-align: center;
+  }
+
+  .product_item {
+    img {
+      max-width: 100%;
+      margin-bottom: 32px;
+    }
+
+    h3 {
+      margin-bottom: 0px;
+    }
+
+    p {
+      &.product_description {
+        margin-bottom: 32px;
+      }
+    }
+
+    .product_sizing {
+      display: block;
+      margin-bottom: 32px;
+      font-size: rem-calc(24);
+      font-family: $header-font-family;
+    }
+  }
+
+  .products_bottom {
+    position: relative;
+    padding-top: 60px;
+    padding-bottom: 90px;
+    background-image: url('/assets/img/tree_lines-2.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    @include breakpoint(large) {
+      height: 400px;
+      margin: 0px auto 0px auto;
+      background-size: cover;
+    } 
+    
+    .info_card {
+      @include border-box;
+      @include flex-align(center, middle);
+      max-width: 286px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 14px 24px;
+      @include default-border;
+      @include default-shadow;
+      background-color: white;
+      text-align: center;
+      
+      .info_card-header {
+        margin-bottom: 0px;
+      }
+
+      p {
+        margin-bottom: 0px;
+        font-size: rem-calc(12);
+
+        &.info_card-description {
+          margin-top: -2px;
+          margin-bottom: 16px;
+          font-size: rem-calc(9);
+          font-weight: 700;
+          color: $green;
+        }
+      }
+
+      @include breakpoint(large) {
+        position: absolute;
+        top: 59%;
+        left: 52%;
+        @include translate(0, -50%);
+        padding: 0px;
+
+        .info_card-wrapper {
+          position: relative;
+          padding: 14px 24px;
+
+          &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            z-index: 2;
+            top: 0px;
+            left: 50%;
+            @include translate(-50%, -50%);
+            height: 18px;
+            width: 18px;
+            background-color: $pink;
+            border-radius: 50%;
+            border: 2px solid white;
+          }
+
+          &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            z-index: 2;
+            top: 0px;
+            left: 50%;
+            @include translate(-50%, -50%);
+            height: 24px;
+            width: 24px;
+            background-color: $dark-gray;
+            border-radius: 50%;
+          }
+        }
+      }
+    }
+  }
+}

@@ -76,16 +76,20 @@ $foundation-palette: (
   alert: #cc4b37,
 );
 $gold: #A38348;
+$green-light: #84A29D;
+$green: #73918C;
+$pink: #B75A76; 
+$pink-dark: #9B4E65;
 $light-gray: #e6e6e6;
 $medium-gray: #cacaca;
 $dark-gray: #8a8a8a;
 $charcoal: #3B444B;
-$black: #17242C;
+$black: #000000;
 $white: #fff;
-$off-white: #f7f7f7;
+$off-white: #f0f0f0;
 $body-background: $white;
 $body-font-color: $black;
-$body-font-family: 'tinos', serif;
+$body-font-family: open-sans, serif;
 $body-antialiased: true;
 $global-margin: 1rem;
 $global-padding: 1rem;
@@ -135,7 +139,7 @@ $max-width: 1440px;
 // 4. Base Typography
 // ------------------
 
-$header-font-family: $body-font-family;
+$header-font-family: bullen, serif;
 $header-font-weight: $global-weight-normal;
 $header-font-style: normal;
 $font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace;
@@ -152,11 +156,11 @@ $header-styles: (
     'h6': ('font-size': 16),
   ),
   medium: (
-    'h1': ('font-size': 64),
-    'h2': ('font-size': 64),
-    'h3': ('font-size': 38),
-    'h4': ('font-size': 32),
-    'h5': ('font-size': 28),
+    'h1': ('font-size': 56),
+    'h2': ('font-size': 44),
+    'h3': ('font-size': 30),
+    'h4': ('font-size': 28),
+    'h5': ('font-size': 24),
     'h6': ('font-size': 20),
   ),
 );

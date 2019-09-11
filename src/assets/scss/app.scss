@@ -70,11 +70,10 @@
 
 
 //Components
-@import 'components/hero';
-@import 'components/expertise';
-@import 'components/athletes';
-@import 'components/story';
-@import 'components/news';
-@import 'components/contact';
-@import 'components/footer';
-@import 'components/header';
+@import 'partials/hero';
+@import 'partials/about';
+@import 'partials/products';
+@import 'partials/faqs';
+@import 'partials/contact';
+@import 'partials/footer';
+@import 'partials/header';

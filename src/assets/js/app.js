@@ -46,19 +46,4 @@ $window.on('load', function(){
       }, 800, function(){});
     }
   });
-
-
-  $(".athletes_carousel").owlCarousel({
-    loop:true,
-    margin:16,
-    nav:true,
-    responsive:{
-      0:{
-          items:1
-      },
-      700:{
-          items:3
-      }
-    }
-  });
 });

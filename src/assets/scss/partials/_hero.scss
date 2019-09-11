@@ -1,0 +1,146 @@
+.hero {
+  position: relative;
+  background-image: url('/assets/img/topography.png');
+  background-size: contain;
+  background-repeat: repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  padding-bottom: 100px;
+
+  .hero_top {
+    padding-top: 30px;
+    padding-bottom: 90px;
+    text-align: center;
+
+    .hero_logo {
+      width: 216px;
+      margin-bottom: 60px;
+    }
+    h1 {
+      display: none;
+    }
+    p {
+      font-size: rem-calc(40);
+      font-family: $header-font-family;
+      line-height: 1.2em;
+  
+      @include breakpoint(medium) {
+        font-size: rem-calc(56);
+      }
+    }
+  }
+
+  .hero_nav {
+    text-align:center;
+    .nav_item {
+      display: inline-block;
+      padding: 0px 24px;
+      a {
+        color: $body-font-color;
+        font-size: rem-calc(14);
+      }
+    }
+  }
+
+  .hero_image {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top: 0px;
+    right: 0px;
+    bottom: -32px;
+    left: 50%;
+    background-image: url('/assets/img/heroImage.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  .hero_bottom {
+    position: relative;
+    padding-top: 60px;
+    padding-bottom: 90px;
+    background-image: url('/assets/img/trees_lines.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    @include breakpoint(large) {
+      height: 300px;
+      margin: 60px auto 0px auto;
+      background-size: cover;
+    } 
+    
+    .info_card {
+      @include border-box;
+      @include flex-align(center, middle);
+      max-width: 286px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 14px 24px;
+      @include default-border;
+      @include default-shadow;
+      background-color: white;
+      text-align: center;
+      
+      .info_card-header {
+        margin-bottom: 0px;
+      }
+
+      p {
+        margin-bottom: 0px;
+        font-size: rem-calc(12);
+
+        &.info_card-description {
+          margin-top: -2px;
+          margin-bottom: 16px;
+          font-size: rem-calc(9);
+          font-weight: 700;
+          color: $green;
+        }
+      }
+
+      @include breakpoint(large) {
+        position: absolute;
+        top: 50%;
+        left: 32%;
+        @include translate(0, -50%);
+        padding: 0px;
+
+        .info_card-wrapper {
+          position: relative;
+          padding: 14px 24px;
+
+          &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            z-index: 2;
+            top: 0px;
+            left: 50%;
+            @include translate(-50%, -50%);
+            height: 18px;
+            width: 18px;
+            background-color: $pink;
+            border-radius: 50%;
+            border: 2px solid white;
+          }
+
+          &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            z-index: 2;
+            top: 0px;
+            left: 50%;
+            @include translate(-50%, -50%);
+            height: 24px;
+            width: 24px;
+            background-color: $dark-gray;
+            border-radius: 50%;
+          }
+        }
+      }
+    }
+  }
+}
