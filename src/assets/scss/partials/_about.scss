@@ -7,9 +7,10 @@
   background-size: cover;
   background-image: url('/assets/img/field_image.jpg');
   background-repeat: no-repeat;
+  background-attachment: fixed;
   text-align: center;
   clip-path: ellipse(100% 55% at 48% 44%);
-  
+
   h2 {
     color: white;
     font-size: rem-calc(44);

@@ -30,6 +30,23 @@
       font-size: rem-calc(24);
       font-family: $header-font-family;
     }
+
+    .product_meta {
+      & > * {
+        display: inline-block;
+        vertical-align: middle;
+      }
+
+      .product_price {
+        margin-right: 12px;
+        font-size: rem-calc(22);
+        font-weight: 700;
+      }
+
+      .button {
+        margin-bottom: 0px;
+      }
+    }
   }
 
   .products_bottom {

@@ -288,20 +288,20 @@ $breadcrumbs-item-separator-color: $medium-gray;
 // ----------
 
 $button-font-family: inherit;
-$button-padding: rem-calc(16);
+$button-padding: 12px 60px 12px 20px;
 $button-margin: 0 0 $global-margin 0;
 $button-fill: solid;
-$button-background: $gold;
-$button-background-hover: scale-color($button-background, $lightness: -15%);
+$button-background: $pink;
+$button-background-hover: $pink-dark;
 $button-color: $white;
 $button-color-alt: $black;
-$button-radius: 3px;
+$button-radius: 50px;
 $button-hollow-border-width: 1px;
 $button-sizes: (
-  tiny: 0.6rem,
-  small: 0.75rem,
-  default: 0.9rem,
-  large: 1.25rem,
+  tiny: 0.4rem,
+  small: 0.55rem,
+  default: 0.7rem,
+  large: 1rem,
 );
 $button-palette: $foundation-palette;
 $button-opacity-disabled: 0.25;
@@ -438,7 +438,7 @@ $select-background: $white;
 $select-triangle-color: $dark-gray;
 $select-radius: $global-radius;
 $input-color: $black;
-$input-placeholder-color: $medium-gray;
+$input-placeholder-color: $body-font-color;
 $input-font-family: inherit;
 $input-font-size: rem-calc(16);
 $input-font-weight: $global-weight-normal;
@@ -448,14 +448,14 @@ $input-background-focus: $white;
 $input-background-disabled: $light-gray;
 $input-border: 2px solid $light-gray;
 $input-border-focus: 2px solid $dark-gray;
-$input-padding: $form-spacing / 2;
+$input-padding: $form-spacing;
 $input-shadow: inset 0 1px 2px rgba($black, 0.1);
 $input-shadow-focus: 0 0 5px $medium-gray;
 $input-cursor-disabled: not-allowed;
 $input-transition: box-shadow 0.5s, border-color 0.25s ease-in-out;
 $input-number-spinners: true;
-$input-radius: $global-radius;
-$form-button-radius: $global-radius;
+$input-radius: 4px;
+$form-button-radius: 4px;
 
 // 21. Label
 // ---------
