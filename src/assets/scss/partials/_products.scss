@@ -1,4 +1,6 @@
 .products {
+  position: relative;
+  z-index: 3;
   padding-top: 100px;
   
   .products_header {

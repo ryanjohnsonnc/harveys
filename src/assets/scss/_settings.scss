@@ -68,8 +68,9 @@
 $global-font-size: rem-calc(20);
 $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
+$pink: #B75A76; 
 $foundation-palette: (
-  primary: #1779ba,
+  primary: $pink,
   secondary: #767676,
   success: #3adb76,
   warning: #ffae00,
@@ -78,7 +79,6 @@ $foundation-palette: (
 $gold: #A38348;
 $green-light: #84A29D;
 $green: #73918C;
-$pink: #B75A76; 
 $pink-dark: #9B4E65;
 $light-gray: #e6e6e6;
 $medium-gray: #cacaca;
@@ -233,12 +233,12 @@ $input-error-font-weight: $global-weight-bold;
 
 $accordion-background: $white;
 $accordion-plusminus: true;
-$accordion-title-font-size: rem-calc(12);
-$accordion-item-color: $primary-color;
-$accordion-item-background-hover: $light-gray;
+$accordion-title-font-size: rem-calc(18);
+$accordion-item-color: $body-font-color;
+$accordion-item-background-hover: #f7f7f7;
 $accordion-item-padding: 1.25rem 1rem;
 $accordion-content-background: $white;
-$accordion-content-border: 1px solid $light-gray;
+$accordion-content-border: 0px solid $light-gray;
 $accordion-content-color: $body-font-color;
 $accordion-content-padding: 1rem;
 

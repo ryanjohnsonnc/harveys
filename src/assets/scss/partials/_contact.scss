@@ -1,5 +1,8 @@
 section.contact {
-  background-color: rgba($green, .2);
+  position: relative;
+  z-index: 5;
+  margin-top: -30px;
+  background-color: rgba($green, .3);
 
   .contact_form-container {
     @include border-box;
