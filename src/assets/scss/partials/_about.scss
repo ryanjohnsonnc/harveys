@@ -1,19 +1,24 @@
 .about {
   position: relative;
   z-index: 3;
-  top: -90px;
-  padding-top: 180px;
-  padding-bottom: 180px;
+  padding-top: 90px;
+  padding-bottom: 90px;
   background-size: cover;
   background-image: url('/assets/img/field_image.jpg');
   background-repeat: no-repeat;
-  background-attachment: fixed;
+
   text-align: center;
-  clip-path: ellipse(100% 55% at 48% 44%);
+  
+  @include breakpoint(large) {
+    background-attachment: fixed;
+    top: -90px;
+    padding-top: 180px;
+    padding-bottom: 180px;
+    clip-path: ellipse(100% 55% at 48% 44%);
+  }
 
   h2 {
     color: white;
-    font-size: rem-calc(44);
   }
 
   .about_sun-icon {

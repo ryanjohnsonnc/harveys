@@ -2,15 +2,21 @@
   position: relative;
   padding-top: 100px;
   z-index: 2;
-  top: -29px;
-  padding-bottom: 180px;
+
+  padding-bottom: 90px;
   background-image: url('/assets/img/topographic_map.svg');
   background-size: contain;
   background-repeat: repeat;
   background-position: center center;
   background-attachment: fixed;
   background-color: $light-gray;
-  clip-path: ellipse(149% 52% at 57% 52%);
+
+
+  @include breakpoint(large) {
+    top: -29px;
+    padding-bottom: 180px;
+    clip-path: ellipse(149% 52% at 57% 52%);
+  }
 
   .faqs_header {
     margin-bottom: 60px;

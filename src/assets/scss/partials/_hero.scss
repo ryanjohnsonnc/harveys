@@ -7,8 +7,12 @@
   background-position: center center;
   background-attachment: fixed;
   background-color: white;
-  padding-bottom: 100px;
-  clip-path: ellipse(149% 58% at 75% 42%);
+  padding-bottom: 50px;
+
+  @include breakpoint(large) {
+    padding-bottom: 100px;
+    clip-path: ellipse(149% 58% at 75% 42%);
+  }
 
   .hero_top {
     padding-top: 60px;
@@ -23,7 +27,7 @@
       display: none;
     }
     p {
-      font-size: rem-calc(40);
+      font-size: rem-calc(36);
       font-family: $header-font-family;
       line-height: 1.2em;
   

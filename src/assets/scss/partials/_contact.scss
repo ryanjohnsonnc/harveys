@@ -1,9 +1,11 @@
 section.contact {
   position: relative;
   z-index: 5;
-  margin-top: -30px;
   background-color: rgba($green, .3);
 
+  @include breakpoint(large) {
+    margin-top: -30px;
+  }
   .contact_form-container {
     @include border-box;
     position: relative;
