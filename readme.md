@@ -1,5 +1,7 @@
 # Harveys Prototype Application
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/5fa7da9d-3687-41c0-88d9-6fe9b8fa58f9/deploy-status)](https://app.netlify.com/sites/harveys/deploys)
+
 [![devDependency Status](https://david-dm.org/zurb/foundation-zurb-template/dev-status.svg)](https://david-dm.org/zurb/foundation-zurb-template#info=devDependencies)
 
 This project is based on The ZURB Template from Foundation [Foundation for Sites](http://foundation.zurb.com/sites). It has a Gulp-powered build system with these features:
