@@ -211,7 +211,7 @@
 }
 
 @mixin tree($tree: 1, $size: 68px, $bottom: 60px, $left: 30px) {
-  display: block;
+  display: none;
   z-index: 0;
   position: absolute;
   bottom: $bottom;
@@ -227,5 +227,9 @@
     background-image: url('/assets/img/tree-2.svg');
   } else {
     background-image: url('/assets/img/tree-1.svg');
+  }
+
+  @include breakpoint(medium) {
+    display: block;
   }
 }
