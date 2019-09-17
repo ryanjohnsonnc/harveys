@@ -17,10 +17,15 @@
     padding-left: 2rem;
     line-height: 1.4em;
 
+    @include breakpoint(medium) {
+      padding-left: 2.5rem;
+    }
+
     &:before {
       left: 1rem;
       right: auto;
       margin-top: -0.7rem;
+      color: $pink;
     }
   }
 }

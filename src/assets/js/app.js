@@ -1,6 +1,7 @@
 import $ from 'jquery';
 import 'what-input';
 
+
 // Foundation JS relies on a global varaible. In ES6, all imports are hoisted
 // to the top of the file so if we used`import` to import Foundation,
 // it would execute earlier than we have assigned the global variable.
@@ -46,5 +47,11 @@ $window.on('load', function(){
         scrollTop: $(section).offset().top + -100
       }, 800, function(){});
     }
+  });
+
+  // Handling Parallaxy Animations
+  var rellax = new Rellax('.bg-tree', {
+    center: true,
+    speed: 1,
   });
 });

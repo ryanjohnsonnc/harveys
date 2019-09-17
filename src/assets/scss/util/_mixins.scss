@@ -212,6 +212,7 @@
 
 @mixin tree($tree: 1, $size: 68px, $bottom: 60px, $left: 30px) {
   display: block;
+  z-index: 0;
   position: absolute;
   bottom: $bottom;
   left: $left;
@@ -220,10 +221,11 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  background-image: url('/assets/img/tree-1.svg');
   
-  @if $tree = 1 {
-    background-image: url('/assets/img/tree-1.svg');
-  } else {
+  @if $tree != 1 {
     background-image: url('/assets/img/tree-2.svg');
+  } else {
+    background-image: url('/assets/img/tree-1.svg');
   }
 }
