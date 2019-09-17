@@ -2,7 +2,6 @@
   position: relative;
   padding-top: 100px;
   z-index: 2;
-
   padding-bottom: 90px;
   background-image: url('/assets/img/topographic_map.svg');
   background-size: contain;
@@ -11,11 +10,26 @@
   background-attachment: fixed;
   background-color: $light-gray;
 
-
   @include breakpoint(large) {
     top: -29px;
     padding-bottom: 180px;
     clip-path: ellipse(149% 52% at 57% 52%);
+  }
+
+  .grid-container {
+    position: relative;
+  }
+
+  .bg-tree {
+    @include tree(2, 48px, 0%, 6%);
+
+    &:nth-of-type(2) {
+      @include tree(1, 68px, 15%, 11%);
+    }
+
+    &:nth-of-type(3) {
+      @include tree(2, 48px, 35%, 93%);
+    }
   }
 
   .faqs_header {

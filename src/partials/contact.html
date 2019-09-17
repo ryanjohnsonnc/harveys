@@ -28,10 +28,17 @@
                   </span>
                 </label>
               </div>
+              <div class="cell small-12">
+                <label>
+                  <input type="text" id="phone" pattern="dashes_only" name="phone" placeholder="Phone Number" aria-errormessage="example1Error3" required >
+                  <span class="form-error" id="example1Error3">
+                    Please enter a phone number. This field only accepts numbers and dashes(-). 
+                  </span>
+                </label>
+              </div>
             </div>
             <div class="cell small-12">
               <label>
-                
                 <textarea rows="4" name="message" placeholder="Your message here..." aria-errormessage="example1Error3" required></textarea>
                 <span class="form-error" id="example1Error3">
                   Please enter your name
@@ -43,7 +50,7 @@
           <div class="grid-container">
             <div class="grid-x grid-margin-x">
               <fieldset class="cell large-12">
-                <button class="button" type="submit" value="Submit">Submit</button>
+                <button class="button" type="submit" value="Submit">Submit <i class="arrow"></i</button>
               </fieldset>
               <!-- <fieldset class="cell large-6">
                 <button class="button" type="reset" value="Reset">Reset</button>

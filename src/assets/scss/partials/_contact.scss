@@ -12,6 +12,8 @@ section.contact {
     top: -80px;
     padding: 32px;
     background-color: $green;
+    @include default-shadow;
+    @include default-border;
     text-align: center;
 
     @include breakpoint(medium) {

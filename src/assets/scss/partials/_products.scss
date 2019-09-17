@@ -1,7 +1,19 @@
 .products {
   position: relative;
   z-index: 3;
-  padding-top: 100px;
+  padding-top: 30px;
+
+  & > .grid-container {
+    position: relative;
+  }
+
+  .bg-tree {
+    @include tree(1, 68px, 94%, 92%);
+
+    &:nth-of-type(2) {
+      @include tree(2, 48px, 99%, 99%);
+    }
+  }
   
   .products_header {
     margin-bottom: 48px;
@@ -9,9 +21,18 @@
   }
 
   .product_item {
+    text-align: center;
+    
     img {
-      max-width: 100%;
+      max-width: 300px;
+      margin-left: auto;
+      margin-right: auto;
       margin-bottom: 32px;
+      text-align: center;
+    }
+
+    .product_item-content {
+      text-align: left;
     }
 
     h3 {
@@ -51,9 +72,10 @@
 
   .products_bottom {
     position: relative;
+    max-width: 1440px;
     padding-top: 60px;
     padding-bottom: 90px;
-    background-image: url('/assets/img/tree_lines-2.svg');
+    background-image: url('/assets/img/tracks-2.svg');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
@@ -63,6 +85,22 @@
       margin: 0px auto 0px auto;
       background-size: cover;
     } 
+
+    .bg-tree {
+      @include tree(1, 48px, 60%, 0%);
+
+      &:nth-of-type(2) {
+        @include tree(2, 48px, 15%, 13%);
+      }
+
+      &:nth-of-type(3) {
+        @include tree(2, 48px, 35%, 85%);
+      }
+
+      &:nth-of-type(4) {
+        @include tree(1, 68px, 22%, 88%);
+      }
+    }
     
     .info_card {
       @include border-box;

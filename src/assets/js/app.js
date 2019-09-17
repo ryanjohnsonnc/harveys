@@ -15,6 +15,7 @@ require('owl.carousel/dist/owl.carousel.min.js');
 // the line below
 //import './lib/foundation-explicit-pieces';
 
+Foundation.Abide.defaults.patterns['dashes_only'] = /^[0-9-]*$/;
 
 $(document).foundation();
 

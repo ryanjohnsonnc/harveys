@@ -174,10 +174,10 @@
 
 // Our default shadow for this theme
 @mixin default-shadow {
-  -webkit-box-shadow: 0px 2px 12px 0px rgba($dark-gray, .1);
-    -moz-box-shadow: 0px 2px 12px 0px rgba($dark-gray, .1);
-    -ms-box-shadow: 0px 2px 12px 0px rgba($dark-gray, .1);
-    box-shadow: 0px 2px 12px 0px rgba($dark-gray, .1);
+  -webkit-box-shadow: 0px 2px 12px 0px rgba($dark-gray, .3);
+    -moz-box-shadow: 0px 2px 12px 0px rgba($dark-gray, .3);
+    -ms-box-shadow: 0px 2px 12px 0px rgba($dark-gray, .3);
+    box-shadow: 0px 2px 12px 0px rgba($dark-gray, .3);
 }
 
 /// Mixin printing a linear-gradient 
@@ -208,4 +208,22 @@
 // Default Border Radius to soften edges
 @mixin default-border($radius: 4px) {
   border-radius: $radius;
+}
+
+@mixin tree($tree: 1, $size: 68px, $bottom: 60px, $left: 30px) {
+  display: block;
+  position: absolute;
+  bottom: $bottom;
+  left: $left;
+  height: $size;
+  width: $size;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+  @if $tree = 1 {
+    background-image: url('/assets/img/tree-1.svg');
+  } else {
+    background-image: url('/assets/img/tree-2.svg');
+  }
 }
