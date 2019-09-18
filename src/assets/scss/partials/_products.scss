@@ -78,7 +78,7 @@
     background-image: url('/assets/img/tracks-2.svg');
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: left center;
 
     @include breakpoint(large) {
       height: 400px;
@@ -133,7 +133,7 @@
 
       @include breakpoint(large) {
         position: absolute;
-        top: 45%;
+        top: 37%;
         left: 52%;
         
         padding: 0px;
