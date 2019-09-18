@@ -146,9 +146,9 @@
 
       @include breakpoint(large) {
         position: absolute;
-        top: 60%;
+        top: 36%;
         left: 32%;
-        @include translate(0, -50%);
+        //\@include translate(0, -50%);
         padding: 0px;
 
         .info_card-wrapper {
@@ -187,7 +187,7 @@
       }
 
       @include breakpoint(xlarge) {
-        top: 60%;
+        top: 36%;
         left: 34%;
       }
 
@@ -244,3 +244,4 @@
     }
   }
 }
+

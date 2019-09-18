@@ -133,9 +133,9 @@
 
       @include breakpoint(large) {
         position: absolute;
-        top: 59%;
+        top: 45%;
         left: 52%;
-        @include translate(0, -50%);
+        
         padding: 0px;
 
         .info_card-wrapper {
