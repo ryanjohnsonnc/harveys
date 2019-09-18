@@ -52,6 +52,6 @@ $window.on('load', function(){
   // Handling Parallaxy Animations
   var rellax = new Rellax('.bg-tree', {
     center: true,
-    speed: 1,
+    speed: .5,
   });
 });
