@@ -175,3 +175,43 @@
     }
   }
 }
+
+.product_reveal {
+  background-image: url('/assets/img/topographic_map.svg');
+  background-size: contain;
+  background-repeat: repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-color: white;
+
+  .grid-container {
+    height: 100%;
+  }
+  .grid-x {
+    height: 100%;
+  }
+  .content {
+    @include border-box;
+    padding: 32px;
+    background-color: white;
+    @include default-shadow;
+    @include default-border;
+    @include flex-align-self(middle);
+
+    h2 {
+      font-weight: 700;
+    }
+    .contact_info {
+      text-align: center;
+      a {
+        font-size: rem-calc(14);
+      }
+      .icon {
+        display: block;
+        width: 32px;
+        height: auto;
+        margin: 0px auto 20px auto;
+      }
+    }
+  }
+}
