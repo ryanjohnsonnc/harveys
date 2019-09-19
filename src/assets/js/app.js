@@ -62,11 +62,15 @@ $window.on('load', function(){
   window.addEventListener('scroll', function(e) {
 		if( isOnScreen( infoCard1 ) ) { /* Pass element id/class you want to check */
 			infoCard1.addClass('swing');
-     }	
+    } else {
+      infoCard1.removeClass('swing');
+    }	
      
-     if( isOnScreen( infoCard2 ) ) { /* Pass element id/class you want to check */
+    if( isOnScreen( infoCard2 ) ) { /* Pass element id/class you want to check */
 			infoCard2.addClass('swing');
- 		}	
+ 		} else {
+      infoCard2.removeClass('swing');
+    }	
 	});
 });
 

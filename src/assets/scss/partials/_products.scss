@@ -182,7 +182,7 @@
   background-repeat: repeat;
   background-position: center center;
   background-attachment: fixed;
-  background-color: white;
+  background-color: $off-white;
 
   .grid-container {
     height: 100%;
@@ -197,19 +197,29 @@
     @include default-shadow;
     @include default-border;
     @include flex-align-self(middle);
+    text-align: center;
 
     h2 {
-      font-weight: 700;
+      margin-bottom: 18px;
+      font-size: rem-calc(30)
+      //font-weight: 700;
     }
     .contact_info {
+      margin-top: 48px;
       text-align: center;
       a {
         font-size: rem-calc(14);
+        font-weight: 700;
+        color: $body-font-color;
+
+        &:hover {
+          color: $pink;
+        }
       }
       .icon {
         display: block;
-        width: 32px;
-        height: auto;
+        height: 36px;
+        width: auto;
         margin: 0px auto 20px auto;
       }
     }

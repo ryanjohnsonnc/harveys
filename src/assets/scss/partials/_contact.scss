@@ -10,6 +10,23 @@ section.contact {
   @include breakpoint(large) {
     margin-top: -30px;
   }
+
+  & > .grid-container {
+    position: relative;
+  }
+
+  .bg-tree {
+    @include tree(2, 48px, 5%, 93%);
+
+    &:nth-of-type(2) {
+      @include tree(1, 68px, 15%, 98%);
+    }
+
+    &:nth-of-type(3) {
+      @include tree(2, 48px, 35%, 93%);
+    }
+  }
+
   .contact_form-container {
     @include border-box;
     position: relative;
