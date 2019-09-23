@@ -81,7 +81,7 @@
     background-position: left center;
 
     @include breakpoint(large) {
-      height: 400px;
+      height: 480px;
       margin: 0px auto 0px auto;
       background-size: cover;
     } 
@@ -131,16 +131,25 @@
         }
       }
 
+      .info_thumb {
+        display: block;
+        height: 100px;
+        width: 100px;
+        margin: 24px auto 0px auto;
+        border-radius: 50%;
+        border: 2px solid $green;
+      }
+
       @include breakpoint(large) {
         position: absolute;
         top: 37%;
-        left: 52%;
-        
+        left: 50%;
         padding: 0px;
 
         .info_card-wrapper {
           position: relative;
           padding: 14px 24px;
+          padding-bottom: 80px;
 
           &:after {
             content: '';
@@ -170,6 +179,14 @@
             background-color: $dark-gray;
             border-radius: 50%;
           }
+        }
+
+        .info_thumb {
+          position: absolute;
+          bottom: -52px;
+          left: 50%;
+          @include translate(-50%, 0px);
+          margin-top: 0px;
         }
       }
     }

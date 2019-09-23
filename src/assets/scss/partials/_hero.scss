@@ -14,8 +14,6 @@
     clip-path: ellipse(149% 58% at 71% 42%);
   }
 
-
-
   .hero_top {
     position: relative;
     padding-top: 90px;
@@ -76,10 +74,11 @@
   .hero_bottom {
     position: relative;
     margin: 0px auto;
+    max-width: 1440px;
     padding-top: 60px;
     padding-bottom: 90px;
     background-image: url('/assets/img/tracks-1.svg');
-    background-size: 100%;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
 
