@@ -81,7 +81,7 @@
     background-position: left center;
 
     @include breakpoint(large) {
-      height: 480px;
+      height: 680px;
       margin: 0px auto 0px auto;
       background-size: cover;
     } 
@@ -142,7 +142,7 @@
 
       @include breakpoint(large) {
         position: absolute;
-        top: 37%;
+        top: 41%;
         left: 50%;
         padding: 0px;
 
