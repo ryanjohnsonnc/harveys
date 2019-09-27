@@ -21,7 +21,8 @@
     text-align: center;
     
     .bg-tree {
-      @include tree(1, 68px, 10%, 100%);
+      @include tree(1, 68px, 10%, 93%);
+
     }
 
     .hero_logo {
@@ -46,6 +47,7 @@
   }
 
   .hero_nav {
+    display: none;
     text-align:center;
     .nav_item {
       display: inline-block;
@@ -54,6 +56,10 @@
         color: $body-font-color;
         font-size: rem-calc(14);
       }
+    }
+
+    @include breakpoint(medium){
+      display: block;
     }
   }
 
@@ -72,6 +78,7 @@
   }
 
   .hero_bottom {
+    display: none;
     position: relative;
     margin: 0px auto;
     max-width: 1440px;
@@ -81,6 +88,10 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
+
+    @include breakpoint(medium ) {
+      display: block;
+    }
 
     @include breakpoint(large) {
       height: 300px;

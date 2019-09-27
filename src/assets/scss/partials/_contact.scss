@@ -16,14 +16,14 @@ section.contact {
   }
 
   .bg-tree {
-    @include tree(2, 48px, 5%, 93%);
+    @include tree(2, 48px, 5%, 88%);
 
     &:nth-of-type(2) {
-      @include tree(1, 68px, 15%, 98%);
+      @include tree(1, 68px, 15%, 92%);
     }
 
     &:nth-of-type(3) {
-      @include tree(2, 48px, 35%, 93%);
+      @include tree(2, 48px, 35%, 88%);
     }
   }
 

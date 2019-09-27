@@ -2,16 +2,21 @@
   position: relative;
   z-index: 3;
   padding-top: 30px;
+  padding-bottom: 80px;
+
+  @include breakpoint(medium) {
+    padding-bottom: 0px;
+  }
 
   & > .grid-container {
     position: relative;
   }
 
   .bg-tree {
-    @include tree(1, 68px, 94%, 92%);
+    @include tree(1, 68px, 94%, 88%);
 
     &:nth-of-type(2) {
-      @include tree(2, 48px, 99%, 99%);
+      @include tree(2, 48px, 99%, 94%);
     }
   }
   
@@ -32,7 +37,11 @@
     }
 
     .product_item-content {
-      text-align: left;
+      text-align: center;
+
+      @include breakpoint(medium) {
+        text-align: left;
+      }
     }
 
     h3 {
@@ -71,6 +80,7 @@
   }
 
   .products_bottom {
+    display: none;
     position: relative;
     max-width: 1440px;
     padding-top: 60px;
@@ -79,6 +89,10 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: left center;
+
+    @include breakpoint(medium) {
+      display: block;
+    }
 
     @include breakpoint(large) {
       height: 680px;
@@ -238,6 +252,14 @@
         height: 36px;
         width: auto;
         margin: 0px auto 20px auto;
+      }
+
+      .contact_block {
+        margin-bottom: 24px;
+
+        @include breakpoint(large){
+          margin-bottom: 0px;
+        }
       }
     }
   }

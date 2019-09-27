@@ -229,7 +229,7 @@
     background-image: url('/assets/img/tree-1.svg');
   }
 
-  @include breakpoint(medium) {
+  @include breakpoint(large) {
     display: block;
   }
 }
