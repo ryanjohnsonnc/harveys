@@ -37,6 +37,15 @@ $window.on('load', function(){
     }
   });
 
+  if(window.location.href.indexOf("complete=true") > -1) {
+    var contactForm = $('.contact_grid');
+
+    $('html, body').animate({
+      scrollTop: contactForm.offset().top + -100
+    }, 800, function(){});
+    contactForm.html('<h2>Success!</h2><p>Thank you for your message. We will review it and get back to you as soon as possible.</p>'); 
+  }
+
   // Handling smooth scroll to anchor links in nav
   
   $('.nav_link').on('click', function(e) {
