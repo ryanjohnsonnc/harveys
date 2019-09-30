@@ -38,7 +38,7 @@ $window.on('load', function(){
   });
 
   if(window.location.href.indexOf("complete=true") > -1) {
-    var contactForm = $('.contact_grid');
+    var contactForm = $('.contact_form-container');
 
     $('html, body').animate({
       scrollTop: contactForm.offset().top + -100
