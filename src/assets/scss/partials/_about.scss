@@ -7,15 +7,13 @@
   background-image: url('/assets/img/field_image.jpg');
   background-repeat: no-repeat;
   background-position: center center;
-
+  will-change: transform;
   text-align: center;
   
   @include breakpoint(large) {
-    background-attachment: fixed;
+    //background-attachment: fixed;
     top: -90px;
     padding-top: 180px;
-    //padding-bottom: 180px;
-    //clip-path: ellipse(100% 55% at 48% 44%);
   }
 
   h2 {
